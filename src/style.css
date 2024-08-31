@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -19,6 +27,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    display: block;
 }
 
 /* Change the color of links on hover */
@@ -42,9 +51,266 @@
     }
 }
 
+/* Main content styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings and paragraphs */
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
 /* Focus style for accessibility */
 .topnav a:focus {
     background-color: #ddd;
     color: black;
     outline: 2px solid #555;
+}
+
+/* Add some styles to improve the look of the services list */
+.services-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for call-to-action button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cta-button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Style for the image section */
+.image-section {
+    position: relative;
+    text-align: center;
+    color: #fff; /* Text color if the image is dark */
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.image-text h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.image-text p {
+    font-size: 1.2em;
+}
+
+/* Media Query for Tablets (min-width: 600px and max-width: 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .image-text {
+        width: 70%; /* Adjust text box width for tablets */
+        padding: 15px;
+    }
+
+    .image-text h2 {
+        font-size: 1.8em;
+    }
+
+    .image-text p {
+        font-size: 1em;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .image-text {
+        width: 90%; /* Adjust text box width for mobile */
+        padding: 10px;
+    }
+
+    .image-text h2 {
+        font-size: 1.5em;
+    }
+
+    .image-text p {
+        font-size: 0.9em;
+    }
+}
+
+/* Style for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust percentage for the number of columns */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Query for gallery-item */
+
+@media screen and (max-width: 600px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+
+/* Style for background image section */
+.background-image-section {
+    background-image: url('/src/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.overlay-text h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.overlay-text p {
+    font-size: 1.2em;
+}
+
+/* Optional styles for testimonials section */
+.testimonials {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.testimonials h2 {
+    margin-top: 0;
+}
+
+.testimonials blockquote {
+    border-left: 3px solid #007BFF;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin: 20px 0;
+}
+
+footer .social-media a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-media a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer .footer-links, 
+    footer .social-media {
+        margin: 10px 0;
+    }
+
+    footer .footer-links a, 
+    footer .social-media a {
+        display: block;
+        margin: 5px 0;
+    }
 }
