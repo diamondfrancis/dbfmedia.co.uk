@@ -186,18 +186,60 @@ p {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 20px; /* Space between plans */
 }
 
 .gallery-item {
-    flex: 1 1 calc(33.333% - 20px); /* Adjust percentage for the number of columns */
+    flex: 1 1 30%; /* Each plan takes up about a third of the container's width */
     box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
+    margin-bottom: 15px;
+}
+
+.gallery-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 /* Media Query for gallery-item */
@@ -207,6 +249,7 @@ p {
         flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
     }
 }
+
 
 
 /* Style for background image section */
