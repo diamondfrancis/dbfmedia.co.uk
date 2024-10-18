@@ -254,7 +254,7 @@ p {
 
 /* Style for background image section */
 .background-image-section {
-    background-image: url('/src/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
+    background-image: url('/public/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 400px; /* Adjust height as needed */
