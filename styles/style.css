@@ -265,11 +265,6 @@ p {
     text-align: center;
 }
 
-.overlay-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 5px;
-}
 
 .overlay-text h2 {
     margin-bottom: 10px;
