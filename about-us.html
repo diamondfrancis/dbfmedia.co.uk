@@ -10,29 +10,43 @@
 <body>
     <header>
         <nav class="topnav">
-            <a href="/home.html">Home</a>
-            <a href="/resources.html">Resources</a>
-            <a href="/services.html">Services</a>
-            <a href="/contact-us.html">Contact Us</a>
-            <a class="active" href="/about-us.html" aria-current="page">About Us</a>
+            <a href="/home.html" class="logo">
+                <img src="/public/images/footer-logo-white.png" alt="DBF Media Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="/home.html">Home</a>
+                <div class="dropdown">
+                    <a href="/resources.html" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="/freeresources.html">Free Resources</a>
+                        <a href="/courses.html">Courses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="/services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="/packages.html">Packages</a>
+                    </div>
+            </div>
+                <a href="/contact-us.html">Contact Us</a>
+                <a href="/about-us.html">About Us</a>
+            </div>
+            <button class="icon" onclick="toggleMenu()">&#9776;</button>
         </nav>
     </header>
-
-<section class="background-image-section">
-    <div class="overlay-text">
-        <h2></h2>
-        <p></p>
-    </div>
-</section>
-    
+    <section class="background-image-section">
+        <div class="overlay-text">
+            <h2></h2>
+            <p></p>
+        </div>
+    </section>
     <main>
         <h1>About Us</h1>
 <p>Director</p>
 <p><b>Diamond Francis</b> is the Director of DBF Media, a dynamic advertising agency. With over four years of experience as a freelance graphic designer, she has gained extensive knowledge in the commercial market. Diamond specializes in graphic design, packaging design, website development, and advertising, acting for both national and local clients.
 <p>Fully retained as a regional agent, her expertise spans various industries, combining creativity and technical precision. Her academic background includes a degree from Coventry University and an MSc in Computing from the University of Sunderland, equipping her with the skills to deliver innovative digital solutions.</p><p>We expand along with our clients!</p>
-<p>Interested in learning more? <a href="/contact-us.html">Contact us</a> today!</p>
+<p>Interested in learning more? <a href='/contact-us'>Contact us</a> today!</p>
     </main>
-
     <footer>
         <p>&copy; 2024 DBF Media. All rights reserved.</p>
         <div class="footer-links">
@@ -41,9 +55,10 @@
             <a href="/sitemap.html">Sitemap</a>
         </div>
         <div class="social-media">
-            <a href="https://instagram.com/dbf.media" target="https://instagram.com/dbf.media" aria-label="Instagram">IG</a>
-            <a href="https://www.threads.net/@dbf.media" target="https://www.threads.net/@dbf.media" aria-label="LinkedIn">Threads</a>
+            <a href="https://instagram.com/dbf.media" target="_blank" aria-label="Instagram" rel="noopener">IG</a>
+            <a href="https://www.threads.net/@dbf.media" target="_blank" aria-label="Threads" rel="noopener">Threads</a>
         </div>
-    </footer>    
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>

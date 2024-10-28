@@ -10,14 +10,30 @@
 <body>
     <header>
         <nav class="topnav">
-            <a href="/home.html">Home</a>
-            <a href="/resources.html">Resources</a>
-            <a class="active" href="/services.html" aria-current="page">Services</a>
-            <a href="/contact-us.html">Contact Us</a>
-            <a href="/about-us.html">About Us</a>
+            <a href="/home.html" class="logo">
+                <img src="/public/images/footer-logo-white.png" alt="DBF Media Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="/home.html">Home</a>
+                <div class="dropdown">
+                    <a href="/resources.html" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="/freeresources.html">Free Resources</a>
+                        <a href="/courses.html">Courses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="/services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="/packages.html">Packages</a>
+                    </div>
+            </div>
+                <a href="/contact-us.html">Contact Us</a>
+                <a href="/about-us.html">About Us</a>
+            </div>
+            <button class="icon" onclick="toggleMenu()">&#9776;</button>
         </nav>
     </header>
-
     <main>
         <h1>Services</h1>
         <h3>Results-Driven Marketing: You Pay Only for What We Deliver!</h3>
@@ -31,68 +47,18 @@
             <li>Step 2: Customized Strategy</li>
             <li>Step 3: Execution and Optimization</li>
             <li>Step 4: Commission-Based Payment</li>
-        <br>  
-            <h3>Our services include:</h3>
+        </ul>
+        <br>
+        <h3>Our services include:</h3>
         <ul class="services-list">
             <li>Brand Awareness</li>
             <li>Bespoke Strategies</li>
             <li>Market Research</li>
             <li>...and more</li>
         </ul>
-        <br>
-        <h3>Choose the plan that best fits your business needs. We offer three subscription tiers: Basic, Standard, and Premium.</h3>
-        <br>
-        <section class="gallery">
-    
-            <!-- Basic Plan -->
-            <div class="gallery-item">
-                <h2>Basic Plan</h2>
-                <img src="/public/images/main-logo-black.jpg" alt="Basic Plan">
-                <p class="price">£299/month</p>
-                <ul class="features">
-                    <li>Free consultation</li>
-                    <li>Basic marketing strategy</li>
-                    <li>2 campaigns per month</li>
-                    <li>Monthly performance report</li>
-                </ul>
-                <a href="https://dbfmedia.co.uk/services" class="btn">Start with Basic (coming soon)</a>
-            </div>
-        
-            <!-- Standard Plan -->
-            <div class="gallery-item">
-                <h2>Standard Plan</h2>
-                <img src="/public/images/main-logo-black.jpg" alt="Standard Plan">
-                <p class="price">£499/month</p>
-                <ul class="features">
-                    <li>Free consultation</li>
-                    <li>Customized marketing strategy</li>
-                    <li>5 campaigns per month</li>
-                    <li>Bi-weekly performance reports</li>
-                    <li>Email marketing support</li>
-                    <li>A/B testing for campaigns</li>
-                </ul>
-                <a href="https://dbfmedia.co.uk/services" class="btn">Go Standard (coming soon)</a>
-            </div>
-        
-            <!-- Premium Plan -->
-            <div class="gallery-item">
-                <h2>Premium Plan</h2>
-                <img src="/public/images/main-logo-black.jpg" alt="Premium Plan">
-                <p class="price">£999/month</p>
-                <ul class="features">
-                    <li>Free consultation</li>
-                    <li>Advanced marketing strategy</li>
-                    <li>Unlimited campaigns per month</li>
-                    <li>Weekly performance reports and insights</li>
-                    <li>Dedicated account manager</li>
-                    <li>Priority support</li>
-                    <li>Comprehensive analytics and optimization</li>
-                </ul>
-                <a href="https://dbfmedia.co.uk/services" class="btn">Choose Premium (coming soon)</a>
-            </div>
-        </section>        
     </main>
-
+    <br>
+    
     <footer>
         <p>&copy; 2024 DBF Media. All rights reserved.</p>
         <div class="footer-links">
@@ -101,9 +67,10 @@
             <a href="/sitemap.html">Sitemap</a>
         </div>
         <div class="social-media">
-            <a href="https://instagram.com/dbf.media" target="https://instagram.com/dbf.media" aria-label="Instagram">IG</a>
-            <a href="https://www.threads.net/@dbf.media" target="https://www.threads.net/@dbf.media" aria-label="LinkedIn">Threads</a>
+            <a href="https://instagram.com/dbf.media" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://www.threads.net/@dbf.media" target="_blank" rel="noopener" aria-label="Threads">Threads</a>
         </div>
-    </footer>    
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>

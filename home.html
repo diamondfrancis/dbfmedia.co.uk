@@ -3,57 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DBF Media is a leading marketing agency specializing in strategic consulting, marketing, and event planning globally.">
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
     <link rel="icon" href="/public/images/main-logo-black.jpg" type="image/x-icon" />
+    <meta name="description" content="DBF Media offers innovative advertising solutions and strategic consulting to empower brands and enhance customer connections.">
     <title>DBF Media - Home</title>
 </head>
 <body>
     <header>
         <nav class="topnav">
-            <a class="active" href="/home.html" aria-current="page">Home</a>
-            <a href="/resources.html">Resources</a>
-            <a href="/services.html">Services</a>
-            <a href="/contact-us.html">Contact Us</a>
-            <a href="/about-us.html">About Us</a>
+            <a href="/home.html" class="logo" aria-label="DBF Media Logo">
+                <img src="/public/images/footer-logo-white.png" alt="DBF Media Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="/home.html">Home</a>
+                <div class="dropdown">
+                    <a href="/resources.html" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="/freeresources.html">Free Resources</a>
+                        <a href="/courses.html">Courses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="/services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="/packages.html">Packages</a>
+                    </div>
+                </div>
+                <a href="/contact-us.html">Contact Us</a>
+                <a href="/about-us.html">About Us</a>
+            </div>
+            <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">&#9776;</button>
         </nav>
-    </header>    
-
+    </header>
     <main>
         <section class="intro">
             <h1>Bridging Gaps, Driving Success</h1>
             <p>At DBF Media, we lead the charge in advertising innovation, offering unmatched expertise in strategic consulting and advertising. Our distinct advantage lies in our commitment to humanizing the connection between businesses and their customers. By prioritizing meaningful, authentic interactions, we empower brands to not only grow their client base but also enter new markets with confidence.</p>
             <p>Our customized strategies ensure that every engagement delivers impactful results and cultivates genuine relationships, enabling your business to achieve extraordinary growth and success.</p>
-               <p>Partner with DBF Media and discover how we can elevate your brand through purposeful, engaging, and effective advertising solutions.</p>
-        </section>    
-
+            <p>Partner with DBF Media and discover how we can elevate your brand through purposeful, engaging, and effective advertising solutions.</p>
+        </section> 
         <section class="image-section">
-            <img src="/public/images/amin-oussar-fuIaRAgUxZg-unsplash.jpg" alt="home-image">
+            <img src="/public/images/amin-oussar-fuIaRAgUxZg-unsplash.jpg" alt="A visual representation of our advertising services" loading="lazy">
+            <!-- Uncomment the section below if you want an overlay on the image
             <div class="image-text">
-                <h2></h2>
-                <p></p>
-            </div>
+                <h2>Transform Your Brand</h2>
+                <p>Partner with us to elevate your brand's presence.</p>
+            </div> 
+            -->
         </section>
-
-<!-- Newsletter Subscription Section -->
-                <section class="newsletter">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Stay updated with the latest marketing insights, tips, and trends from DBF Media. Sign up to receive our monthly newsletter straight to your inbox.</p>
-                    <form action="/submit-newsletter" method="post" class="newsletter-form">
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </section>
-
-<!--text<section class="testimonials">
-                    <h2>What Our Clients Say</h2>
-                    <blockquote>
-                        <p>Working with DBF Media was a game-changer for us. Our website's transformation led to a significant boost in online engagement. We highly recommend their services!<footer>- MailSea AI Team, <a href="https://mailseaai.co.uk/">mailseaai.co.uk</a></footer>
-                    </blockquote>
-                </section>        -->
-                
-            </main>
-
+    </main>
     <footer>
         <p>&copy; 2024 DBF Media. All rights reserved.</p>
         <div class="footer-links">
@@ -62,9 +60,10 @@
             <a href="/sitemap.html">Sitemap</a>
         </div>
         <div class="social-media">
-            <a href="https://instagram.com/dbf.media" target="https://instagram.com/dbf.media" aria-label="Instagram">IG</a>
-            <a href="https://www.threads.net/@dbf.media" target="https://www.threads.net/@dbf.media" aria-label="LinkedIn">Threads</a>
+            <a href="https://instagram.com/dbf.media" target="_blank" rel="noopener" aria-label="Visit DBF Media on Instagram">IG</a>
+            <a href="https://www.threads.net/@dbf.media" target="_blank" rel="noopener" aria-label="Visit DBF Media on Threads">Threads</a>
         </div>
-    </footer>    
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>

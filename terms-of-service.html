@@ -10,11 +10,28 @@
 <body>
     <header>
         <nav class="topnav">
-            <a href="/home.html">Home</a>
-            <a href="/resources.html">Resources</a>
-            <a href="/services.html">Services</a>
-            <a href="/contact-us.html">Contact Us</a>
-            <a href="/about-us.html">About Us</a>
+            <a href="/home.html" class="logo">
+                <img src="/public/images/footer-logo-white.png" alt="DBF Media Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="/home.html">Home</a>
+                <div class="dropdown">
+                    <a href="/resources.html" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="/freeresources.html">Free Resources</a>
+                        <a href="/courses.html">Courses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="/services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="/packages.html">Packages</a>
+                    </div>
+            </div>
+                <a href="/contact-us.html">Contact Us</a>
+                <a href="/about-us.html">About Us</a>
+            </div>
+            <button class="icon" onclick="toggleMenu()">&#9776;</button>
         </nav>
     </header>
     <main>
@@ -68,9 +85,11 @@
             <a href="/sitemap.html">Sitemap</a>
         </div>
         <div class="social-media">
-            <a href="https://instagram.com/dbf.media" target="_blank" aria-label="Instagram">IG</a>
-            <a href="https://www.threads.net/@dbf.media" target="_blank" aria-label="Threads">Threads</a>
+            <a href="https://instagram.com/dbf.media" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://www.threads.net/@dbf.media" target="_blank" rel="noopener" aria-label="Threads">Threads</a>
         </div>
     </footer>
+        <!-- javascript -->
+<script src="/index.js"></script>
 </body>
 </html>
