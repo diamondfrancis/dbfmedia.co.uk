@@ -9,31 +9,47 @@
 </head>
 <body>
     <header>
-        <nav class="topnav">
-            <a href="/home.html" class="logo">
-                <img src="/public/images/footer-logo-white.png" alt="DBF Media Logo" />
-            </a>
-            <div class="nav-links">
+      <section class="nav-bar">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="https://dbfmedia.co.uk" title="DBF Media Home"><img src="/public/images/footer-logo-white.png" alt="DBF Media Logo"></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!" title="Toggle Navigation"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
                 <a href="/home.html">Home</a>
-                <div class="dropdown">
-                    <a href="/resources.html" class="dropbtn">Resources</a>
-                    <div class="dropdown-content">
-                        <a href="/freeresources.html">Free Resources</a>
-                        <a href="/courses.html">Courses</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="/services.html" class="dropbtn">Services</a>
-                    <div class="dropdown-content">
-                        <a href="/packages.html">Packages</a>
-                    </div>
-            </div>
-                <a href="/contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="#!">Services</a>
+                <ul class="nav-dropdown">
+            <li>
+              <a href="/packages.html">Packages</a>
+            </li>
+          </ul>
+        </li>
+        <li>
                 <a href="/about-us.html">About Us</a>
-            </div>
-            <button class="icon" onclick="toggleMenu()">&#9776;</button>
-        </nav>
-    </header> 
+              </li>
+              <li>
+                <a href="#">Resources</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="/freeresources.html">Free Resources</a>
+                  </li>
+                  <li>
+                    <a href="/courses.html">Courses</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
     <main>
         <h1>Privacy Policy</h1>
         <p>Effective Date: 01.09.2024</p>
@@ -111,6 +127,7 @@
         </div>
     </footer>
         <!-- javascript -->
-<script src="/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/script.js"></script>
 </body>
 </html>
