@@ -198,26 +198,24 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-
-
-
-
-/* Main content styling */
+/* MAIN (styling)*/
 main {
     padding: 20px;/* Add padding around the main content */
     max-width: 1200px;  /* Set a maximum width for the content */
     margin: 0 auto;/* Center the content horizontally */
 }
 
-/* Add some styles to improve the look of the services list */
-.services-list {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-}
-
-.services-list li {
-    padding: 8px 0;  /* Add padding above and below each list item */
-    border-bottom: 1px solid #ddd;  /* Add a border below each list item */
+/* ABOUT US (image section)*/
+.background-image-section {
+    background-image: url('/public/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }
 
 /* Style for the image section */
@@ -284,7 +282,20 @@ main {
     }
 }
 
-/* Style for the gallery, subscription packages */
+
+/* SERVICES */
+.services-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+/* Services list styling */
+.services-list li {
+    padding: 8px 0;  /* Add padding above and below each list item */
+    border-bottom: 1px solid #ddd;  /* Add a border below each list item */
+}
+
+/* SUBSCRIPTION PACKAGE (gallery styling) */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -292,6 +303,7 @@ main {
     gap: 20px; /* Space between plans */
 }
 
+/* Style for each item, (subscription packages) */
 .gallery-item {
     flex: 1 1 30%; /* Each plan takes up about a third of the container's width */
     box-sizing: border-box;
@@ -303,33 +315,38 @@ main {
     background-color: #f9f9f9;
 }
 
+/* Style for the gallery image, (subscription packages) */
 .gallery-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
+/* Style for the gallery header 2, (subscription packages) */
 .gallery-item h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
+/* Style for the gallery prices, (subscription packages) */
 .price {
     font-size: 2em;
     margin: 10px 0;
     color: #333;
 }
 
+/* Style for the gallery features, (subscription packages) */
 .features {
     list-style-type: none;
     padding: 0;
 }
 
+/* Style for the gallery list, (subscription packages) */
 .features li {
     margin: 10px 0;
 }
 
-/* Button Styles */
+/* BUTTON */
 .btn, .cta-button, .download-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -354,7 +371,7 @@ main {
     background-color: var(--primary-color); /* Return to main color on active */
 }
 
-/*button focusu styles*/
+/*button focus styles*/
 .btn:focus, .cta-button:focus, .download-btn:focus {
     outline: 3px solid var(--hover-color); /* Outline for accessibility */
     outline-offset: 2px; /* Offset for better visibility */
@@ -381,29 +398,7 @@ a:focus {
     }
 }
 
-
-
-
-
-
-/* Style for background image section (about us page)*/
-.background-image-section {
-    background-image: url('/public/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-}
-
-
-
-
-
-/* Contact form styles */
+/* CONTACT FORM */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -455,13 +450,7 @@ a:focus {
     background-color: #0056b3;
 }
 
-
-
-
-
-
-
-/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design (contact form) */
 @media screen and (max-width: 768px) {
     .contact-form {
         padding: 15px;
@@ -491,13 +480,7 @@ a:focus {
     }
 }
 
-
-
-
-
-
-
-/* Style for download section */
+/* DOWNLOAD RESOURCES */
 .download-section {
     background-color: #fff; /* Clean white background */
     padding: 30px;
@@ -548,7 +531,7 @@ a:focus {
     outline-offset: 2px;
 }
 
-/* Footer styling */
+/* FOOTER */
 footer {
     background-color: #333;
     color: #f2f2f2;
