@@ -1,15 +1,23 @@
 /** code by diamondfrancis ( https://diamondfrancis.online ) **/
+
+/** body style**/
 body {
 	margin: 0;
 	padding: 0;
 }
+
+/** world style**/
 * {
-	font-family: 'Righteous', cursive;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+/** Navigation bar style**/
 .nav-bar {
   height: 70px;
   background: #262626;
 }
+
+/** Navigation logo style**/
 .brand {
   position: absolute;
   left: 0; /* Aligns it to the far left */
@@ -18,30 +26,38 @@ body {
   text-transform: uppercase;
   font-size: 1.4em;
 }
+
 .brand a img {
 	max-height: 70px;
 }
+
 .brand a,
 .brand a:visited {
   color: #ffffff;
   text-decoration: none;
 }
+
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 nav {
   float: right;
 }
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 nav ul li {
   float: left;
   position: relative;
 }
+
+/** Navigation list <a> style**/
 nav ul li a,
 nav ul li a:visited {
   display: block;
@@ -51,30 +67,41 @@ nav ul li a:visited {
   color: #ffffff;
   text-decoration: none;
 }
+
+/** Navigation list hover style**/
 nav ul li a:hover,
 nav ul li a:visited:hover {
   background: #2e2f30;
   color: #ffffff;
 }
+
+/** Navigation list style**/
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: ' ▾';
 }
+
+/** Navigation list style (width)**/
 nav ul li ul li {
   min-width: 190px;
 }
+
+/** Navigation list <a> style**/
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
 }
 
+/** Navigation dropdown**/
 .nav-dropdown {
   position: absolute;
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
+
+/** hamburger settings on the phone**/
 .nav-mobile {
   display: none;
   position: absolute;
@@ -85,6 +112,7 @@ nav ul li ul li a {
   width: 70px;
 }
 
+/** @media for nav, .nav-mobile(hamburger), nav dropdown, Logo**/
 @media only screen and (max-width: 798px) {
   .nav-mobile {
     display: block;
