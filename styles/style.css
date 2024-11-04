@@ -1,23 +1,23 @@
 /** code by diamondfrancis ( https://diamondfrancis.online ) **/
 
-/** body style**/
+/**body style**/
 body {
 	margin: 0;
 	padding: 0;
 }
 
-/** world style**/
+/**global style**/
 * {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/** Navigation bar style**/
+/**navigation bar style**/
 .nav-bar {
   height: 70px;
   background: #262626;
 }
 
-/** Navigation logo style**/
+/**navigation logo style**/
 .brand {
   position: absolute;
   left: 0; /* Aligns it to the far left */
@@ -27,31 +27,37 @@ body {
   font-size: 1.4em;
 }
 
+/**navigation logo <a> style**/
 .brand a img {
 	max-height: 70px;
 }
 
+/**navigation logo style**/
 .brand a,
 .brand a:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
+/**navigation container style**/
 .nav-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/**navigation style**/
 nav {
   float: right;
 }
 
+/**navigation list style**/
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/**navigation list style**/
 nav ul li {
   float: left;
   position: relative;
@@ -146,11 +152,13 @@ nav ul li ul li a {
 		margin-top: 5px;
 	}
 }
+
 @media screen and (min-width: 799px) {
   .nav-list {
     display: block !important;
   }
 }
+
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -190,11 +198,6 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-article {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
-}
 
 
 
