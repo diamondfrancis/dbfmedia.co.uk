@@ -348,18 +348,19 @@ main {
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-/* Button Active State */
+/*button active state*/
 .btn:active, .cta-button:active, .download-btn:active {
     transform: translateY(1px); /* Pressed effect */
     background-color: var(--primary-color); /* Return to main color on active */
 }
 
-/* Focus Styles */
+/*button focusu styles*/
 .btn:focus, .cta-button:focus, .download-btn:focus {
     outline: 3px solid var(--hover-color); /* Outline for accessibility */
     outline-offset: 2px; /* Offset for better visibility */
 }
 
+/*button hover styles*/
 .btn:hover, .cta-button:hover, .download-btn:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
@@ -380,7 +381,12 @@ a:focus {
     }
 }
 
-/* Style for background image section */
+
+
+
+
+
+/* Style for background image section (about us page)*/
 .background-image-section {
     background-image: url('/public/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
     background-size: cover;
@@ -393,16 +399,11 @@ a:focus {
     text-align: center;
 }
 
-.overlay-text h2 {
-    margin-bottom: 10px;
-    font-size: 2em;
-}
 
-.overlay-text p {
-    font-size: 1.2em;
-}
 
-/* Contact Form Styles */
+
+
+/* Contact form styles */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -412,6 +413,7 @@ a:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact form label styling */
 .contact-form label {
     display: block;
     margin-bottom: 10px;
@@ -419,6 +421,7 @@ a:focus {
     color: #555;
 }
 
+/* Contact form input styling */
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
@@ -429,10 +432,12 @@ a:focus {
     font-size: 1em;
 }
 
+/* Contact form text area styling */
 .contact-form textarea {
     resize: vertical; /* Allow vertical resizing only */
 }
 
+/* Contact form button styling */
 .contact-form button {
     width: 100%;
     padding: 10px;
@@ -445,9 +450,16 @@ a:focus {
     transition: background-color 0.3s ease;
 }
 
+/* Contact form button hover styling */
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
@@ -479,6 +491,12 @@ a:focus {
     }
 }
 
+
+
+
+
+
+
 /* Style for download section */
 .download-section {
     background-color: #fff; /* Clean white background */
@@ -492,18 +510,21 @@ a:focus {
     margin-right: auto;
 }
 
+/* Download section header 2 styling */
 .download-section h2 {
     font-size: 1.8em;
     color: #333;
     margin-bottom: 15px;
 }
 
+/* Download section paragraph styling */
 .download-section p {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 25px;
 }
 
+/* Download section button styling */
 .download-btn {
     display: inline-block;
     padding: 12px 30px;
@@ -515,17 +536,19 @@ a:focus {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Download section button hover styling */
 .download-btn:hover {
     background-color: #0056b3; /* Darken on hover */
     transform: scale(1.05); /* Slight scale on hover */
 }
 
+/* Download section button focus styling */
 .download-btn:focus {
     outline: 3px solid #0056b3;
     outline-offset: 2px;
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
     background-color: #333;
     color: #f2f2f2;
@@ -533,28 +556,34 @@ footer {
     text-align: center;
 }
 
+/* Footer paragraph styling */
 footer p {
     margin: 10px 0;
 }
 
+/* Footer hyperlink styling */
 footer .footer-links {
     margin: 20px 0;
 }
 
+/* Footer hyperlink <a> href styling */
 footer .footer-links a {
     color: #f2f2f2;
     text-decoration: none;
     margin: 0 10px;
 }
 
+/* Footer hyperlink <a> href hover styling */
 footer .footer-links a:hover {
     text-decoration: underline;
 }
 
+/* Footer social media, (Threads, Instagram) styling */
 footer .social-media {
     margin: 20px 0;
 }
 
+/* Footer social media <a> href styling */
 footer .social-media a {
     color: #f2f2f2;
     text-decoration: none;
@@ -562,6 +591,7 @@ footer .social-media a {
     font-size: 20px;
 }
 
+/* Footer social media <a> href hover styling */
 footer .social-media a:hover {
     color: #007BFF;
 }
