@@ -1,53 +1,19 @@
-/* Color Variables */
-:root {
-    --primary-color: #007BFF; /* Main color for buttons and links */
-    --hover-color: #0056b3;/* Darker color for hover effects */
-    --dark-background: #333;/* Dark background color */
-    --light-background: #fff;/* Light background color */
-}
-
-/* Universal Selector Reset */
-* {
-    margin: 0;/* Remove default margin from all elements */
-    padding: 0;/* Remove default padding from all elements */
-    box-sizing: border-box;/* Set box-sizing to border-box for better control */
-}
-
-/* Set global styles for specific elements */
+/** code by diamondfrancis ( https://diamondfrancis.online ) **/
 body {
-    font-family: Arial, sans-serif; /* Font for the entire body */
-    font-size: 16px;/* Base font size */
-    line-height: 1.5;/* Line height for improved readability */
-    color: #333;/* Dark gray text for softer contrast */
-    margin: 0;/* Remove default body margins */
-    padding: 0;/* Remove default body padding */
-    background-color: #f9f9f9;/* Light background color for contrast */
+	margin: 0;
+	padding: 0;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 16px;/* Add space below headings */
+* {
+	font-family: 'Righteous', cursive;
 }
-
-p {
-    margin-bottom: 16px;/* Add space below paragraphs */
-}
-
-
-
-
-
-
-
-
 .nav-bar {
   height: 70px;
   background: #262626;
 }
-
 .brand {
   position: absolute;
-  padding: 0px;
-  float: inherit;
+  left: 0; /* Aligns it to the far left */
+  padding-left: 30px; /* Optional: Adjust padding if needed */
   line-height: 70px;
   text-transform: uppercase;
   font-size: 1.4em;
@@ -60,12 +26,10 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
-
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 nav {
   float: right;
 }
@@ -81,7 +45,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 20px;
+  padding: 0 45.5px;
   line-height: 70px;
   background: #262626;
   color: #ffffff;
@@ -89,7 +53,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2ab1ce;
+  background: #2e2f30;
   color: #ffffff;
 }
 nav ul li a:not(:only-child):after,
@@ -166,7 +130,6 @@ nav ul li ul li a {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
-
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
@@ -208,42 +171,6 @@ article {
 
 
 
-
-
-/* Form Styling */
-.form-inline .form-control {
-    border-radius: 20px; /* Rounded input field */
-    border: 1px solid #ddd; /* Light border */
-    padding: 0.5rem 1rem;
-}
-
-.form-inline .btn {
-    border-radius: 20px; /* Rounded button */
-    color: #fff;
-    background-color: #28a745; /* Green color for submit button */
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.form-inline .btn:hover {
-    background-color: #218838; /* Darker green on hover */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.2rem; /* Smaller font for brand on mobile */
-    }
-
-    .navbar-toggler {
-        padding: 6px 8px;
-    }
-
-    .form-inline {
-        margin-top: 10px;
-    }
-}
-
 /* Main content styling */
 main {
     padding: 20px;/* Add padding around the main content */
@@ -260,29 +187,6 @@ main {
 .services-list li {
     padding: 8px 0;  /* Add padding above and below each list item */
     border-bottom: 1px solid #ddd;  /* Add a border below each list item */
-}
-
-/* Style for call-to-action button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.10);
-}
-
-.cta-button:focus {
-    outline: 3px solid #0056b3;
-    outline-offset: 2px;
 }
 
 /* Style for the image section */
@@ -457,7 +361,6 @@ a:focus {
     color: #fff;
     text-align: center;
 }
-
 
 .overlay-text h2 {
     margin-bottom: 10px;
