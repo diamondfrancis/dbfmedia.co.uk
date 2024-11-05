@@ -346,13 +346,13 @@ main {
     margin: 10px 0;
 }
 
-/* BUTTON */
+/* TIER-SUBSCRIPTION BUTTON (text style) */
 .btn, .cta-button, .download-btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;/* White text for better contrast */
-    background-color: var(--primary-color);/* Main button color */
+    background-color: #0091ff;/* Main button color */
     text-decoration: none;
     border-radius: 5px;/* Rounded corners */
     transition: background-color 0.3s ease, transform 0.3s ease;/* Smooth transitions */
@@ -379,7 +379,7 @@ main {
 
 /*button hover styles*/
 .btn:hover, .cta-button:hover, .download-btn:hover {
-    background-color: var(--hover-color);
+    background-color: #0267d3;
     transform: scale(1.05);
 }
 
