@@ -3,56 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
     <link rel="icon" href="/public/images/main-logo-black.jpg" type="image/x-icon" />
     <title>DBF Media - Packages</title>
 </head>
+<style>
+  /* Adjust the navbar to prevent overflow */
+  .navbar-collapse {
+
+      margin: 0;
+      overflow-x: hidden;
+  }
+</style>
 <body>
        <!-- navigation bar-->
-  <section class="nav-bar">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="https://dbfmedia.co.uk/" title="DBF Media"><img src="/public/images/footer-logo-white.png"></a>
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!" title="Toggle Navigation"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="/home.html">Home</a>
-          </li>
-          <li>
-            <a href="/about-us.html">About Us</a>
-          </li>
-          <li>
-            <a href="#!">Guides</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="/freeresources.html">Free resources</a>
-              </li>
-              <li>
-                <a href="/courses.html">Courses</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">What We Do</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="/services.html">Services</a>
-              </li>
-              <li>
-                <a href="/packages.html">Packages</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/contact-us.html">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+       <div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse" title="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand">DBF MEDIA</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/home.html">Home</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="/courses.html">Courses</a></li>
+                                    <li><a href="/freeresources.html">Free Resources</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">What We Do <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/services.html">Services</a></li>
+                                    <li><a href="/packages.html">Packages</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/about-us.html">About Us</a></li>
+                            <li><a href="/contact-us.html">Contact Us</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" name="search" id="" placeholder="Search Anything Here..." class="form-control">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <h1>Packages</h1>
         <br>
@@ -121,8 +141,10 @@
             <a href="https://www.threads.net/@dbf.media" target="_blank" rel="noopener" aria-label="Threads">Threads</a>
         </div>
     </footer>
+
         <!-- javascript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

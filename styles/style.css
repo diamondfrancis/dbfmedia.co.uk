@@ -107,7 +107,7 @@ nav ul li ul li a {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-/** hamburger settings on the phone**/
+/** hamburger positioning**/
 .nav-mobile {
   display: none;
   position: absolute;
@@ -159,6 +159,7 @@ nav ul li ul li a {
   }
 }
 
+/* NAVAGATION HAMBURGER TOGGLE */
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -281,7 +282,6 @@ main {
         font-size: 0.9em;
     }
 }
-
 
 /* SERVICES */
 .services-list {
