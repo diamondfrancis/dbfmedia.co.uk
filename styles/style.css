@@ -46,19 +46,6 @@ main {
     margin: 0 auto; /* Center the content horizontally */
 }
 
-/* ABOUT US (image section)*/
-.background-image-section {
-    background-image: url('/public/images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-}
-
 /* Style for the image section */
 .image-section {
     position: relative;
