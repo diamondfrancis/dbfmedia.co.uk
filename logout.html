@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <link rel="icon" href="/public/images/main-logo-black.jpg" type="image/x-icon" />
+    <title>Logout - DBF Media</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            margin-top: 20px;
+        }
+        .logout-container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .btn-logout {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logout-container">
+        <h2>Logout</h2>
+        <p>Are you sure you want to log out?</p>
+
+        <form action="/logout" method="POST">
+            <button type="submit" class="btn btn-danger btn-block btn-logout">Logout</button>
+        </form>
+
+        <hr>
+
+        <div>
+            <a href="#">Cancel</a>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
