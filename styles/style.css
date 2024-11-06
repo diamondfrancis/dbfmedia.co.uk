@@ -11,6 +11,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    line-height: 1.6; /* Improve readability with better line spacing */
+    margin: 0 0 1.5em 0; /* Add vertical spacing between paragraphs */
+}
+
 /**navigation bar style**/
 .nav-bar {
   height: 70px;
@@ -44,6 +49,25 @@ main {
     padding: 20px 40px; /* Add padding on left and right sides */
     max-width: 1200px; /* Adjust width as needed */
     margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Not currently used */
+.content-wrapper {
+    padding: 20px 40px; /* Adds space on left and right for better positioning */
+    max-width: 1000px; /* Optional: Set a max width for improved readability */
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .content-wrapper, main {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-wrapper, main {
+        padding: 15px;
+    }
 }
 
 /* Style for the image section */
