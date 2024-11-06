@@ -41,7 +41,7 @@ body {
 
 /* MAIN (styling)*/
 main {
-    padding: 0; /* Remove padding */
+    padding: 20px 40px; /* Add padding on left and right sides */
     max-width: 1200px; /* Adjust width as needed */
     margin: 0 auto; /* Center the content horizontally */
 }
